@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kinematics-grading"
+version = "0.1.0"
+description = "Reverse-generation stress testing of MLLM-based grading assistants, using kinematics graph exercises as the test domain."
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "Pillow",
+    "opencv-python",
+    "optuna",
+    "torch",
+    "torchvision",
+    "matplotlib",
+    "scikit-learn",
+    "scipy",
+    "pandas",
+    "httpx",
+    "python-dotenv",
+    "PyYAML",
+    "captum",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+]
+reports = [
+    # notebooks/statistical_analysis.ipynb (editing/headless re-execution) and
+    # reports/*.docx generation -- not needed to run the core pipeline.
+    "nbformat",
+    "nbclient",
+    "jupyter-client",
+    "ipykernel",
+    "python-docx",
+]
+
+[project.scripts]
+kinematics-grading = "kinematics_grading.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

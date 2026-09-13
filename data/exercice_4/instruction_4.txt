@@ -1,0 +1,6 @@
+The graph is now velocity versus time, so the story is represented by the value of the function itself, not its slope:
+
+initially going forward means ,
+then stopping means  for a sustained interval,
+then going backward means .
+This problem is conceptually simpler than Scenario 2 once the representation is understood, but that representational distinction is exactly what makes it pedagogically important.

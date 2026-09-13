@@ -1,0 +1,6 @@
+The graph is , so the story must be encoded in the slope of the position graph:
+
+initially moving forward means positive slope,
+then stopping means zero slope for a sustained interval,
+then moving backward means negative slope.
+The most important conceptual point is that this problem is not about whether the graph is above or below the axis. On a position graph, “forward” and “backward” are not the sign of ; they are the sign of the derivative.

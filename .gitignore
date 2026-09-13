@@ -1,0 +1,22 @@
+# Experiment outputs -- generated per-run, not part of the framework itself.
+output/
+smoke_test_output/
+reports/*.docx
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+build/
+dist/
+
+# Environment / secrets
+.env
+.venv/
+venv/
+
+# OS/editor
+.DS_Store
+Thumbs.db

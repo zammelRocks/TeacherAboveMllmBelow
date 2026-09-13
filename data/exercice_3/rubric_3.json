@@ -1,0 +1,33 @@
+{
+    "max_score": 10,
+    "rules": [
+      {
+        "id": "stopped",
+        "points": 2,
+        "quantity": "dfdx",
+        "relation": "eq",
+        "expected": 0
+      },
+      {
+        "id": "forward",
+        "points": 2,
+        "quantity": "dfdx",
+        "relation": "ge",
+        "expected": 0
+      },
+      {
+        "id": "acc",
+        "points": 3,
+        "quantity": "d2fdx2",
+        "relation": "gt",
+        "expected": 0.05
+      },
+      {
+        "id": "const",
+        "points": 3,
+        "quantity": "d2fdx2",
+        "relation": "eq",
+        "expected": 0
+      }
+    ]
+  }

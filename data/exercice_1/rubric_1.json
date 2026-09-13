@@ -1,0 +1,12 @@
+{
+    "max_score": 4,
+    "rules": [
+      {
+        "id": "slope",
+        "points": 4,
+        "quantity": "dfdx",
+        "relation": "gt",
+        "expected": 0.05
+      }
+    ]
+  }

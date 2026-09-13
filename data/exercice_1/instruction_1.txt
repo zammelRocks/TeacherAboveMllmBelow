@@ -1,0 +1,1 @@
+The student is being asked to produce a graph of  that is monotonically increasing over the interval they actually use. In human terms: as  gets larger,  should also get larger. For a position graph, that means the object is always moving in the positive direction; for a generic function task, it simply means the function never decreases.

@@ -1,0 +1,26 @@
+{
+    "max_score": 10,
+    "rules": [
+      {
+        "id": "forward",
+        "points": 3,
+        "quantity": "dfdx",
+        "relation": "gt",
+        "expected": 0.1
+      },
+      {
+        "id": "parking",
+        "points": 4,
+        "quantity": "dfdx",
+        "relation": "eq",
+        "expected": 0
+      },
+      {
+        "id": "reverse",
+        "points": 3,
+        "quantity": "dfdx",
+        "relation": "lt",
+        "expected": -0.1
+      }
+    ]
+  }

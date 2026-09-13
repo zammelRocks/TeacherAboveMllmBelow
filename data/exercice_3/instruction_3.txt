@@ -1,0 +1,6 @@
+The graph is , so:
+
+“starts from rest” means initial velocity is zero, hence the initial slope is zero;
+“accelerates forward” means velocity is increasing in the positive direction, hence the second derivative is positive during the first phase;
+“then drives with constant speed” means velocity becomes a positive constant, hence the position graph becomes a straight line with positive slope during the later phase, so the second derivative becomes zero.
+This problem is all about derivative relationships.
