@@ -1,9 +1,9 @@
-# TeacherAboveMllmBelow — kinematics-grading
+# TeacherAboveMllmBelow : kinematics-grading
 
 A reusable framework for **reverse-generation stress testing of MLLM-based
 grading assistants**: instead of asking "is this answer correct?", it asks
 *"at what point during a gradual correction from a wrong answer to the right
-one does the grader start accepting it — and does that point make sense?"*
+one does the grader start accepting it:and does that point make sense?"*
 
 Given a wrong answer and a correct answer to the same question, the
 framework synthesizes a smooth sequence of in-between images, has a
@@ -21,7 +21,7 @@ Grading assistants built on multimodal LLMs are usually evaluated on
 low marks to a bad one? This framework asks the complementary, harder
 question: **when a submission is still wrong, but visibly closer to
 correct than before, how early does the assistant start treating it as
-acceptable — and is that consistent with what its own grading rubric
+acceptable:and is that consistent with what its own grading rubric
 says?** A grader that gives a passing score to a half-finished answer, or
 whose scoring reasoning contradicts its own stated rubric, has a real
 weakness that ordinary "grade this correct answer" testing will never
@@ -74,7 +74,7 @@ from "the image is genuinely good":
   in the right direction, and that only the final step should be graded
   strictly.
 - **`standalone_submission`**: the assistant is given no information
-  suggesting the image is a draft or a step of anything — it grades the
+  suggesting the image is a draft or a step of anything:it grades the
   image exactly as if it were a complete, final answer, with no reference
   image to compare against. Partial credit is still allowed, but must be
   justified strictly by how close the image's measured properties are to
@@ -82,7 +82,7 @@ from "the image is genuinely good":
   progress.
 
 Run the same corpus under both (into separate output directories) and
-compare the resulting acceptance patterns — a large gap tells you how much
+compare the resulting acceptance patterns:a large gap tells you how much
 of your grading assistant's behavior is really about the submissions, and
 how much is an artifact of how the grading prompt frames the task. See
 `grading/prompts.py` for the exact two prompts, and `analysis/acceptance.py`
