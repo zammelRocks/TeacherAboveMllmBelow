@@ -14,7 +14,7 @@ for a set of kinematics-graph reading exercises, plus everything needed to
 adapt it to grade your own material or stress-test a different grading
 assistant.
 
-## Why this exists
+## Gap
 
 Grading assistants built on multimodal LLMs are usually evaluated on
 *correct* answers: does the assistant give full marks to a good answer and
